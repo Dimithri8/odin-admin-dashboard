@@ -16,20 +16,127 @@ body {
   height: 100vh;
 }
 .header {
-  background-color: rgb(221, 221, 108);
+  background-color: #ffff;
   color: black;
   grid-column-start: 2;
   grid-column-end: 3;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  padding: 10px 30px;
+  gap: 10px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.08);
+  position: relative;
 }
 
+.profile-picture {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  background-size: fill;
+  background-position: center;
+  border-radius: 50%;
+}
+.user-greeting-img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  background-position: center;
+  border-radius: 50%;
+}
+.btn {
+  background-color: rgb(14, 148, 226);
+  color: white;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+.header-top-row {
+  display: flex;
+  justify-content: space-between;
+}
+.searchbar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.search-field {
+  border: none;
+  background-color: rgb(231, 231, 231);
+  border-radius: 15px;
+  width: 500px;
+  padding: 5px 5px;
+}
+.profile-info {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+.user-profile {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.username {
+  font-size: 12px;
+  font-weight: bold;
+}
+.header-bottom-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.user-greeting {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.greeting-text {
+  font-size: 12px;
+  font-weight: 500;
+}
+.greeting-username {
+  font-size: 18px;
+  font-weight: bold;
+}
+.ctas {
+  display: flex;
+  gap: 15px;
+}
+.material-symbols--search {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='m19.6 21l-6.3-6.3q-.75.6-1.725.95T9.5 16q-2.725 0-4.612-1.888T3 9.5t1.888-4.612T9.5 3t4.613 1.888T16 9.5q0 1.1-.35 2.075T14.7 13.3l6.3 6.3zM9.5 14q1.875 0 3.188-1.312T14 9.5t-1.312-3.187T9.5 5T6.313 6.313T5 9.5t1.313 3.188T9.5 14'/%3E%3C/svg%3E");
+  background-color: currentColor;
+  -webkit-mask-image: var(--svg);
+  mask-image: var(--svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+}
+.streamline--ringing-bell-notification-remix {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 14'%3E%3Cpath fill='%23000' fill-rule='evenodd' d='M3.633.26a.627.627 0 0 1-.143.873a5.38 5.38 0 0 0-2.24 4.362a.625.625 0 0 1-1.25 0A6.63 6.63 0 0 1 2.76.117a.625.625 0 0 1 .873.143M7 1.5a4.625 4.625 0 0 0-4.625 4.625v3.25a.875.875 0 0 1-.875.875a.625.625 0 0 0 0 1.25h11a.625.625 0 1 0 0-1.25a.875.875 0 0 1-.875-.875v-3.25A4.625 4.625 0 0 0 7 1.5m3.375 7.875c0 .305.065.603.189.875H3.435c.124-.272.189-.57.189-.875v-3.25a3.375 3.375 0 0 1 6.75 0zM6 12.5A.75.75 0 0 0 6 14h2a.75.75 0 1 0 0-1.5zM11.24.117a.625.625 0 1 0-.73 1.016a5.38 5.38 0 0 1 2.24 4.362a.625.625 0 0 0 1.25 0A6.63 6.63 0 0 0 11.24.117' clip-rule='evenodd'/%3E%3C/svg%3E");
+  background-color: currentColor;
+  -webkit-mask-image: var(--svg);
+  mask-image: var(--svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+}
 .sidebar {
-  background-color: lightseagreen;
+  background-color: rgb(14, 148, 226);
   color: white;
   grid-row-start: 1;
   grid-row-end: 3;
 }
 .main {
-  background-color: yellowgreen;
+  background-color: rgb(231, 231, 231);
   color: black;
   grid-row-start: 2;
   grid-row-end: 3;
